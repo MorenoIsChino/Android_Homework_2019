@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--自定义对话框dialog-->
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- 分割线 -->
+    <style name="style_cut_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+    <declare-styleable name="TabItem">
+        <attr name="android:text" />
+        <attr name="android:icon" />
+        <attr name="android:layout" />
+    </declare-styleable>
+
+
+    <declare-styleable name="XTabLayout">
+        <attr name="xTabIndicatorHeight" format="dimension" />
+        <attr name="xTabIndicatorWidth" format="dimension" />
+        <attr name="xTabIndicatorColor" format="color" />
+        <attr name="xTabPadding" format="dimension" />
+        <attr name="xTabPaddingStart" format="dimension" />
+        <attr name="xTabPaddingTop" format="dimension" />
+        <attr name="xTabPaddingEnd" format="dimension" />
+        <attr name="xTabPaddingBottom" format="dimension" />
+        <attr name="xTabTextAppearance" format="reference" />
+        <attr name="xTabTextColor" format="color" />
+        <attr name="xTabSelectedTextColor" format="color" />
+        <attr name="xTabMinWidth" format="dimension" />
+        <attr name="xTabMaxWidth" format="dimension" />
+        <attr name="xTabBackgroundColor" format="reference|color" />
+        <attr name="xTabSelectedBackgroundColor" format="reference|color" />
+        <attr name="xTabContentStart" format="dimension" />
+        <attr name="xTabMode">
+            <enum name="scrollable" value="0x00000000" />
+            <enum name="fixed" value="0x00000001" />
+        </attr>
+        <attr name="xTabGravity" format="integer" />
+
+        <attr name="xTabTextSize" format="dimension" />
+        <attr name="xTabTextBold" format="boolean" />
+        <attr name="xTabSelectedTextSize" format="dimension" />
+        <attr name="xTabTextSelectedBold" format="boolean" />
+        <attr name="xTabDisplayNum" format="integer" />
+        <attr name="xTabTextAllCaps" format="boolean" />
+
+
+        <attr name="xTabDividerHeight" format="dimension" />
+        <attr name="xTabDividerWidth" format="dimension" />
+        <attr name="xTabDividerWidthWidthText" format="boolean" />
+        <attr name="xTabDividerColor" format="color" />
+        <attr name="xTabDividerGravity">
+            <enum name="top" value="0x00000000" />
+            <enum name="center" value="0x00000001" />
+            <enum name="bottom" value="0x00000002" />
+        </attr>
+        <attr name="xTabLineOffset" format="dimension" />
+    </declare-styleable>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
